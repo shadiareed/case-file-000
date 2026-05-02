@@ -1,0 +1,16 @@
+---
+const { title = "Case File 000" } = Astro.props;
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-neutral-100 text-neutral-900 min-h-screen">
+    <slot />
+  </body>
+</html>
